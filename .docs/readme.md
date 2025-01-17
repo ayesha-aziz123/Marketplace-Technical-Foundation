@@ -24,8 +24,6 @@
  - Description: Create a new order in the marketplace. This endpoint handles order creation by accepting customer information, product details, and payment status.
  - Request Body Example:
 
-
-
 {
   "customer_id": "123",
   "products": [
@@ -37,18 +35,12 @@
   "payment_status": "pending"
 }
 
-
-
-
 ## Response Example:
 {
   "order_id": "56789",
   "status": "Order Created",
   "message": "Your order has been successfully created."
 }
-
-
-
 
 
 
@@ -60,8 +52,6 @@
  - Description: This endpoint provides real-time updates for order status. It fetches shipment details via a third-party shipment tracking API, showing the current status of the order, tracking number, and expected delivery date.
  - Path Parameter:
  - order_id: The unique identifier of the order to track.
-
-
 
 
 Response Example:
@@ -76,8 +66,6 @@ Response Example:
 }
 
 
-
-
 Response Fields:
 
  - order_id: Unique identifier of the order being tracked.
@@ -87,8 +75,6 @@ Response Fields:
  - tracking_number: Unique tracking number provided by the shipment carrier.
  - carrier: The carrier used for shipment (e.g., FedEx).
  - delivery_status: Current status of the delivery (e.g., "On Track", "Delayed").
-
-
 
 ## 4. Manage Product Inventory
 
